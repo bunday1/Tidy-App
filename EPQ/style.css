@@ -58,7 +58,7 @@ a{
     -webkit-border-radius: 0;
     
     margin-top: 5%;
-    width: 29%
+    width: 150px;
 }
 
 .preset{
@@ -140,7 +140,13 @@ form {
 }
 
 @media (min-width: 350px) {
-    
+    #loginBut{
+        -webkit-appearance: none;
+        -webkit-border-radius: 0;
+
+        margin-top: 5%;
+        width: 30%;
+    }
     #tidyGoal {
         width: 15%;
     }
@@ -215,6 +221,13 @@ form {
 
 
 @media (min-width: 650px) {
+    #loginBut{
+        -webkit-appearance: none;
+        -webkit-border-radius: 0;
+
+        margin-top: 5%;
+        width: 30%;
+    }
     
     #tidyGoal {
         width: 10%;
