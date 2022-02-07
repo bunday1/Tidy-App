@@ -13,6 +13,8 @@ h1{
 }*/
 
 button{
+    background-color: rgb(190,190,200);
+    color: black;
     -webkit-appearance: none;
     -webkit-border-radius: 0;
     
@@ -146,6 +148,8 @@ form {
     }
 
     button{
+        background-color: rgb(190,190,200);
+        color: black;
         -webkit-appearance: none;
         -webkit-border-radius: 0;
         max-width: 70px;
@@ -225,6 +229,8 @@ form {
     }
 
     button{
+        background-color: rgb(190,190,200);
+        color: black;
         -webkit-appearance: none;
         -webkit-border-radius: 0;
         max-width: 70px;
