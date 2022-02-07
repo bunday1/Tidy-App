@@ -13,10 +13,6 @@ h1{
 }*/
 
 button{
-    background-color: rgb(190,190,200);
-    color: black;
-    -webkit-appearance: none;
-    -webkit-border-radius: 0;
     
     max-width: 70px;
     padding: 5px;
@@ -58,8 +54,6 @@ a{
 }
 
 #loginBut{
-    background-color: rgb(190,190,200);
-    color: black;
     -webkit-appearance: none;
     -webkit-border-radius: 0;
     
@@ -148,10 +142,6 @@ form {
     }
 
     button{
-        background-color: rgb(190,190,200);
-        color: black;
-        -webkit-appearance: none;
-        -webkit-border-radius: 0;
         max-width: 70px;
         padding: 5px;
         margin-bottom: 20px;
@@ -229,10 +219,6 @@ form {
     }
 
     button{
-        background-color: rgb(190,190,200);
-        color: black;
-        -webkit-appearance: none;
-        -webkit-border-radius: 0;
         max-width: 70px;
         padding: 5px;
         margin-bottom: 20px;
@@ -334,3 +320,13 @@ form {
 /* .slidecontainer label:disabled{
     opacity: 0.4;
 } */
+
+
+@supports (-webkit-touch-callout: none) {
+    button{
+        background-color: rgb(190,190,200);
+        color: black;
+        -webkit-appearance: none;
+        -webkit-border-radius: 0;
+    }
+}
