@@ -75,7 +75,7 @@ body {
     background-color: burlywood;
     background-image: url("img/desert.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     font-family: EB Garamond;
 }
 
