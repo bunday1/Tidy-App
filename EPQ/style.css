@@ -132,11 +132,11 @@ form {
 }
 
 #uname {
-    width: 50%
+    width: 70%
 }
 
 #psw {
-    width: 50%;
+    width: 70%;
 }
 
 @media (min-width: 350px) {
@@ -149,13 +149,6 @@ form {
         width: 60%;
     }
     
-    #uname {
-        width: 40%
-    }
-
-    #psw {
-        width: 40%;
-    }
 
     button{
         max-width: 70px;
@@ -230,13 +223,7 @@ form {
     #login {
         width: 30%;
     }
-    #uname {
-        width: 15%
-    }
-
-    #psw {
-        width: 15%;
-    }
+  
 
     input{
         margin-bottom: 10px;
