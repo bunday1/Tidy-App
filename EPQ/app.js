@@ -64,8 +64,14 @@ var goal = goalNum.value
 
 function goalFunc(e) {
     e.preventDefault();
-    goal = goalNum.value
+    goal = parseInt(goalNum.value)
+    if (!goal) {
+        goal = 1
+        alert("Enter number for your goal")
+    }
+    console.log(goalNum)
     console.log("goal" + goal)
+    console.log(typeof goal)
 }
 
 // If the value stored as locations has not been set yet, it is set in local storage
