@@ -13,6 +13,7 @@ h1{
 }*/
 
 button{
+    -webkit-appearance: none;
     max-width: 70px;
     padding: 5px;
     margin-bottom: 10px;
