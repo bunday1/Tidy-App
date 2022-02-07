@@ -56,7 +56,8 @@ a{
 }
 
 #loginBut{
-    background-color: gray;
+    background-color: rgb(190,190,200);
+    color: black;
     -webkit-appearance: none;
     -webkit-border-radius: 0;
     
