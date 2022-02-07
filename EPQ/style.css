@@ -53,6 +53,7 @@ a{
 }
 
 #loginBut{
+    -webkit-appearance: none;
     margin-top: 5%;
     width: 29%
 }
