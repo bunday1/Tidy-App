@@ -13,7 +13,6 @@ h1{
 }*/
 
 button{
-    background-color: #e7e7e7;
     -webkit-appearance: none;
     -webkit-border-radius: 0;
     
@@ -145,7 +144,6 @@ form {
     }
 
     button{
-        background-color: #e7e7e7;
         -webkit-appearance: none;
         -webkit-border-radius: 0;
         max-width: 70px;
@@ -225,7 +223,6 @@ form {
     }
 
     button{
-        background-color: #e7e7e7;
         -webkit-appearance: none;
         -webkit-border-radius: 0;
         max-width: 70px;
