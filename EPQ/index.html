@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property="og:image" content=".img/beige.jpg" />
+    <title>Tidy App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Tidy App</h1>
+    <div class="container" id="login">
+        <form >
+            <label><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" id="uname" required>
+            <div></div>
+
+            <label><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" id="psw" required style="margin-left: 3px">
+            <div></div>
+
+            <button type="submit" id="loginBut">Login</button>
+        </form>
+    </div>
+
+    <!-- <a href="app.html"><button>skip</button></a> -->
+    <script type="text/javascript">
+
+        var creds = 
+        [
+            [
+                "josh",
+                "1805",
+            ],
+
+            [
+                "elle",
+                "0511",
+            ],
+        
+        ]
+            
+
+        var unameInput = document.getElementById("uname")
+        var pswInput = document.getElementById("psw")
+        var submitButton = document.getElementById("loginBut").addEventListener("click", loginFunc)
+
+        function loginFunc(e){
+            e.preventDefault()
+            correct = false
+            // console.log(unameInput.value)
+            // console.log(creds[0][0])
+            for (let i=0; i < creds.length; i++) {
+                if (creds[i][0] == unameInput.value) {
+                    if (creds[i][1] == pswInput.value) {
+                        console.log("SUCCESS")
+                        correct = true
+                        window.location.href = "app.html"
+                    }
+                } 
+            }
+            if (correct != true) {
+                alert("Incorrect Login")
+            }
+        }
+
+    </script>
+</body>
+</html>

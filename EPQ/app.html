@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TidyAPP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="wrapper">
+
+        <div class="box header">
+            <h1>Tidy App</h1>
+        </div>
+
+
+        <div class="box sidebar">
+            <form id="form0">
+                <button type="button" id="locButton">Location</button>
+                
+            </form>
+
+            <form id="form1">
+                <button type="button" id="catButton">Category</button>
+                <!-- <button type="button" id="catButtonEdit" class="edit"><a href="edit2.html">Edit</a></button> -->
+            </form>
+
+            <form id="form2">
+                <button type="button" id="thingButton">Thing</button>
+                <!-- <button type="button" id="thingButtonEdit" class="edit"><a href="edit2.html">Edit</a></button> -->
+            </form>
+        </div>
+
+
+        <div class="box content">
+            <p id="location">It's time to tidy!</p>
+            <p id="random">You've got this!</p>
+
+            <p id="count">Tidied today: 0</p>
+            <p id="reward"></p>
+
+            <div class="slidecontainer">
+                <input type="range" min="1" max="100" value="1" class="slider" id="doneSlider">
+                <label for="slider">Done!</label>
+            </div>
+
+            <form id="form3">
+                    <!-- <button type="submit" id="done">Done</button> -->
+                    <button type="submit" id="skip">Skip</button>
+                </form>
+        </div>
+            
+        <div class="box footer">
+            <a href="edit.html">
+                <button type="button" id="locButtonEdit" class="edit">Edit Locations</button>
+            </a>
+            <a href="shop.html">
+                <button id="shopButton">Shop</button>
+            </a>
+
+            <a href="index.html">
+                <button id="logOut">Log Out</button>
+            </a>
+        </div>
+    </div>
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
