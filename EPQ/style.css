@@ -74,6 +74,7 @@ body {
     margin: 20px;
     background-color: burlywood;
     background-image: url("img/desert.jpg");
+    background-repeat: no-repeat;
     background-size: auto;
     font-family: EB Garamond;
 }
@@ -154,6 +155,7 @@ form {
         margin: 40px;
         background-color: burlywood;
         background-image: url("img/desert.jpg");
+        background-repeat: no-repeat;
         background-size: auto;
         font-family: EB Garamond;
     }
@@ -230,6 +232,7 @@ form {
         margin: 5px;
         background-color: burlywood;
         background-image: url("img/desert.jpg");
+        background-repeat: no-repeat;
         background-size: auto;
         font-family: EB Garamond;
     }
