@@ -121,8 +121,17 @@ form {
     display: inline;
 }
 
+#tidyGoal {
+    width: 10%;
+}
+
 
 @media (min-width: 350px) {
+    
+    #tidyGoal {
+        width: 15%;
+    }
+
     #login {
         width: 60%;
     }
@@ -190,6 +199,11 @@ form {
 
 
 @media (min-width: 650px) {
+    
+    #tidyGoal {
+        width: 10%;
+    }
+
     #login {
         width: 30%;
     }

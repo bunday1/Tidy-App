@@ -58,6 +58,16 @@ var locations = [
 
 ]
 
+goalNum = document.getElementById("tidyGoal")
+goalSubmit = document.getElementById("goalSubmit").addEventListener("click", goalFunc)
+var goal = goalNum.value
+
+function goalFunc(e) {
+    e.preventDefault();
+    goal = goalNum.value
+    console.log("goal" + goal)
+}
+
 // If the value stored as locations has not been set yet, it is set in local storage
 if (JSON.parse(localStorage.getItem("locations")) == undefined) {
     localStorage.setItem("locations", JSON.stringify(locations));
@@ -184,9 +194,16 @@ function doneFunc(e) {
     var x = parseInt(localStorage.getItem("tidied"))
     // Increments x by 1, updates user
     x += 1 
+    console.log("x"+x)
+    // goal = getGoal()
+    console.log("goal "+goal)
+    if (x >= goal){
+        var x = 0
+        alert("Congratulations! You reached your goal of " + goal + " things!")
+    }
     localStorage.setItem("tidied", x.toString())
     counter.innerText = "Tidied today: " + x
-    if (x % 5 == 0) {
+    if (x % 5 == 0 && x !=0) {
         // Every 5 things tidied the user is given a motivating message
         reward.innerText = "Well done! " + x + " already! Keep going!"
     } else {
@@ -195,6 +212,7 @@ function doneFunc(e) {
 
 
 }
+
 
 function skipFunc(e) {
     // Resets buttons and text values to start again
@@ -221,6 +239,7 @@ slider.onchange = function () {
         slider.value = 1;
     }
 }
+
 
 
 
