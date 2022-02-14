@@ -63,6 +63,10 @@
                 if (creds[i][0] == unameInput.value) {
                     if (creds[i][1] == pswInput.value) {
                         console.log("SUCCESS")
+                        console.log(unameInput.value)
+                        var name = unameInput.value
+                        console.log(name)
+                        localStorage.setItem("name", JSON.stringify(name));
                         correct = true
                         window.location.href = "app.html"
                     }

@@ -88,10 +88,15 @@ var locs = JSON.parse(localStorage.getItem("locations"))
 // localStorage.setItem("misc", JSON.stringify(categoryItems[2]));
 
 
+var name = JSON.parse(localStorage.getItem("name"))
+console.log("name" + name)
+
+
 
 // Declaring Variables
 var para = document.getElementById("random");
 var loc = document.getElementById("location");
+loc.innerText = "It's time to tidy, " + name +"!"
 var counter = document.getElementById("count");
 var reward = document.getElementById("reward");
 
@@ -187,7 +192,7 @@ function doneFunc(e) {
     slider.disabled = true
     skipButton.disabled = true
     // Resets messages on page
-    loc.innerText = "It's time to tidy!"
+    loc.innerText = "It's time to tidy, " + name +"!"
     para.innerText = "You've got this!"
     // Retrieves tidied value
     var x = parseInt(localStorage.getItem("tidied"));
@@ -230,7 +235,7 @@ function skipFunc(e) {
     locButton.disabled = false
     catButton.disabled = true
     thingButton.disabled = true
-    loc.innerText = "It's time to tidy!"
+    loc.innerText = "It's time to tidy, " + name +"!"
     para.innerText = "You've got this!"
 }
 
