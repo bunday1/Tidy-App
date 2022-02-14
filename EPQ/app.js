@@ -106,6 +106,8 @@ else {
     counter.innerText = "Tidied today: " + x
 }
 
+console.log(x + "ahhhh")
+
 
 
 // Buttons are retrieved from html for use in DOM
@@ -348,6 +350,5 @@ slider.onchange = function () {
 //     //     }
 //     // )
 // }
-
 
 
