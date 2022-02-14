@@ -360,4 +360,7 @@ form {
         -webkit-appearance: none;
         -webkit-border-radius: 0;
     }
+    button:disabled {
+        opacity: 0.4f;
+    }
 }
